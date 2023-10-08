@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .btn {
+        @apply inline-block px-6 py-3 mr-3 font-bold text-center text-white uppercase align-middle transition-all rounded-lg cursor-pointer bg-primary text-xs
+    }
+
+    /*.btn:hover {*/
+    /*    @apply ease-soft-in*/
+    /*}*/
+    .btn-primary {
+        @apply bg-primary text-white
+    }
+
+    .btn-primary:hover {
+        @apply bg-primary-300 text-white
+    }
+
+    .btn-secondary {
+        @apply bg-secondary text-white
+    }
+
+    .btn-secondary:hover {
+        @apply bg-secondary-300 text-white
+    }
+
+    .btn-tertiary {
+        @apply bg-tertiary text-white
+    }
+
+    .btn-tertiary:hover {
+        @apply bg-tertiary-300 text-white
+    }
+
+    .btn-danger {
+        @apply bg-danger text-white
+    }
+
+    .btn-danger:hover {
+        @apply bg-danger-300 text-white
+    }
+
+    .btn-info {
+        @apply bg-info text-white
+    }
+
+    .btn-info:hover {
+        @apply bg-info-300 text-white
+    }
+
+    .btn-warning {
+        @apply bg-warning text-white
+    }
+
+    .btn-warning:hover {
+        @apply bg-warning-300 text-white
+    }
+
+    .btn-success {
+        @apply bg-success text-white
+    }
+
+    .btn-success:hover {
+        @apply bg-success-300 text-white
+    }
+
+    .input {
+        @apply text-sm block w-full
+        appearance-none rounded-lg border border-solid bg-white bg-clip-padding
+        px-3 py-2 font-normal text-gray-700 transition-all;
+        line-height: 1.4rem;
+        transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+
+    .is-invalid {
+        @apply border-red-500
+    }
+
+    .input:focus {
+        @apply border-secondary-300 outline-none transition-shadow;
+        --tw-shadow: 0 0 0 2px #e9aede;
+        --tw-shadow-colored: 0 0 0 2px var(--tw-shadow-color);
+        box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
+
+    .error-text {
+        @apply text-red-500 text-xs mt-1 ml-1;
+    }
+
+    .badge {
+        @apply inline-block px-2 py-1 text-sm font-semibold rounded-lg
+    }
+
+}
